@@ -24,7 +24,10 @@ assert 'not excluded from grading' in amendment
 assert 'GPT-5.6 Sol' in protocol and 'Amendment 1' in protocol
 with (ROOT/'CASE_REGISTRY.csv').open(newline='') as fh:
     rows=list(csv.DictReader(fh))
-assert len(rows)==1 and rows[0]['case_id']=='P0'
-assert rows[0]['phase']=='retrospective_pilot'
-assert rows[0]['primary_endpoint_pass']=='0'
-print('PROTOCOL_VALIDATION_OK files=10 registry_cases=1 prospective_started=0')
+p0=[r for r in rows if r['case_id']=='P0']
+assert len(p0)==1 and p0[0]['phase']=='retrospective_pilot'
+assert p0[0]['primary_endpoint_pass']=='0'
+for r in rows:
+    if r['phase']=='prospective':
+        assert r['cue_timestamp_utc'] and r['first_pass_commit'], r['case_id']
+print(f'PROTOCOL_VALIDATION_OK files=10 registry_cases={len(rows)} prospective_started={len([r for r in rows if r["phase"]=="prospective"])}')
