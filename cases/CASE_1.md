@@ -44,10 +44,18 @@
   run at 2026-08-29T19:05:11Z).
 
 ## Independent evaluation
-- Evaluator: PENDING — awaiting external grade (protocol §5/§8; agent does not self-grade)
-- Score: pending
-- S0/S1/S2/S3 findings: pending
-- Primary endpoint: pending
+- Evaluation 1 received: GPT-5.6 Sol protocol-designer grade, preserved verbatim at
+  `cases/evaluations/CASE_1_GRADE_01_GPT56_SOL.md`.
+- Reported score/verdict: **A+ — 98/100; PASS; no material scientific error identified.**
+- Evaluator disclosure: GPT-5.6 Sol designed the protocol. Under Amendment 1 this is valid
+  protocol-designer grading but **not an independent external evaluation** without an additional
+  separate evaluator.
+- Reported findings: all scientific calculations and required outputs correct; 305/305 validator
+  checks and byte-identical rebuild confirmed; two minor reporting defects identified (transient
+  spans two adjacent samples, not one; “836 samples” should read 836 points per curve / 10,032 total).
+- S0/S1/S2/S3 adjudication: **deferred pending the remainder of the evaluation grades**. The
+  evaluator proposed two minor reporting issues and no S2/S3-equivalent finding.
+- Primary endpoint: **not yet finalized**; awaiting the complete evaluation set.
 
 ## Correction cycle
 - Correction commit: none (not started; permitted only after external evaluation)
