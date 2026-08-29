@@ -86,6 +86,7 @@ Amendment 1 separates protocol design, execution, and evaluation:
 - **`z-ai/glm-5.3-flash` inside Sirius** is the frozen prospective executing configuration.
 - GPT-5.6 Sol may grade a frozen submission if its designer role is disclosed, but that grade is not described as evaluator-independent by itself.
 - A human or separate model that neither designed the protocol nor executed the case may provide an additional independent grade.
+- Amendment 2 standardizes a blinded, read-only Codex CLI evaluator after first-pass freeze.
 
 See [AMENDMENTS.md](AMENDMENTS.md) for the controlling language.
 
@@ -101,7 +102,20 @@ See [AMENDMENTS.md](AMENDMENTS.md) for the controlling language.
 | [`cases/`](cases/) | Timestamped configuration, randomization, ingestion, and case evidence |
 | [cases/P0_EIS.md](cases/P0_EIS.md) | Retrospective pilot record and original material defect |
 | [`templates/`](templates/) | Case-report and independent-grade templates |
-| [`scripts/`](scripts/) | Frozen selector and protocol validator |
+| [`scripts/`](scripts/) | Frozen selector, protocol validator, and post-freeze Codex evaluator |
+
+## Run a blinded independent Codex evaluation
+
+After a case first pass is frozen, invoke Codex CLI directly against that exact commit:
+
+```bash
+python3 scripts/evaluator.py /path/to/frozen-submission \
+  --commit <40-character-first-pass-commit> \
+  --case-id CASE_1 \
+  --output-dir cases/evaluations/CASE_1_CODEX_01
+```
+
+The evaluator exports a history-free snapshot, runs Codex under `--sandbox read-only`, attaches the frozen figures, and preserves a schema-constrained grade plus the exact prompt, evidence hashes, event log, and runtime metadata. It never uses the Sirius subagent-dispatch tool. Use `--dry-run` to audit the evidence boundary and generated command without calling Codex.
 
 ## Validate the protocol repository
 
@@ -112,10 +126,10 @@ python3 scripts/validate_protocol.py
 Expected status at the current checkpoint:
 
 ```text
-PROTOCOL_VALIDATION_OK files=10 registry_cases=1 prospective_started=0
+PROTOCOL_VALIDATION_OK files=11 registry_cases=2 prospective_started=1
 ```
 
-The validator’s registry count remains one until the frozen Case 1 first-pass record is added. Case 1 configuration and ingestion evidence are already committed under `cases/`.
+The validator currently includes the retrospective pilot and the frozen prospective Case 1 registry row.
 
 ## Reporting commitments
 
