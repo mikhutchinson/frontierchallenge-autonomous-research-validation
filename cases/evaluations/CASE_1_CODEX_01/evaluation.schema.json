@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "reviewer",
+    "score",
+    "verdict",
+    "artifact_complete",
+    "reproducibility",
+    "findings",
+    "severity_counts",
+    "principal_conclusion_changes",
+    "required_result_changes",
+    "primary_endpoint_pass",
+    "primary_endpoint_rationale",
+    "correction_required",
+    "overall_summary"
+  ],
+  "properties": {
+    "reviewer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "system",
+        "model",
+        "separate_process",
+        "blinded_to_prior_grades",
+        "conflicts",
+        "hidden_materials_accessed",
+        "materials_accessed"
+      ],
+      "properties": {
+        "system": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "separate_process": {
+          "type": "boolean"
+        },
+        "blinded_to_prior_grades": {
+          "type": "boolean"
+        },
+        "conflicts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "hidden_materials_accessed": {
+          "type": "boolean"
+        },
+        "materials_accessed": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "verdict": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "FAIL"
+      ]
+    },
+    "artifact_complete": {
+      "type": "boolean"
+    },
+    "reproducibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "central_results_recomputed",
+        "fresh_environment_rerun",
+        "assessment"
+      ],
+      "properties": {
+        "central_results_recomputed": {
+          "type": "boolean"
+        },
+        "fresh_environment_rerun": {
+          "type": "boolean"
+        },
+        "assessment": {
+          "type": "string"
+        }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "severity",
+          "title",
+          "evidence",
+          "required_result_affected",
+          "principal_conclusion_affected"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "S0",
+              "S1",
+              "S2",
+              "S3"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "string"
+          },
+          "required_result_affected": {
+            "type": "boolean"
+          },
+          "principal_conclusion_affected": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "severity_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "S0",
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "properties": {
+        "S0": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "S1": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "S2": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "S3": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "principal_conclusion_changes": {
+      "type": "boolean"
+    },
+    "required_result_changes": {
+      "type": "boolean"
+    },
+    "primary_endpoint_pass": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "primary_endpoint_rationale": {
+      "type": "string"
+    },
+    "correction_required": {
+      "type": "boolean"
+    },
+    "overall_summary": {
+      "type": "string"
+    }
+  }
+}

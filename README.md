@@ -10,11 +10,11 @@ This repository contains the **study protocol and audit record**, not the scient
 |---|---|
 | Protocol | ARAV-ECHEM-01 v1.1, publicly frozen before Case 1 |
 | Retrospective pilot | P0 — EIS equivalent-circuit analysis; protocol-forming and not confirmatory |
-| Prospective series | 1 of 5 cases started; no prospective result yet |
-| Case 1 | `task_010_polarization_316l_corrosion` — first pass frozen at `eb324d0a14557f451a6af858d73124fd5d6a1537`; awaiting external evaluation |
+| Prospective series | Case 1 complete (primary endpoint PASS); 4 eligible cases remain |
+| Case 1 | Complete — independent score 94/100 PASS; final S0=1/S1=3/S2=0/S3=0; correction `83a7aa1` validated |
 | Executing configuration | Sirius with `z-ai/glm-5.3-flash` via OpenRouter |
 | Protocol designer | GPT-5.6 Sol; excluded from prospective execution under Amendment 1 |
-| First-pass evaluation | Pending; the frozen submission is ready for independent grading |
+| First-pass evaluation | Complete under Amendment 2; independent Codex grade preserved and reconciled |
 
 ### Case 1 checkpoint
 

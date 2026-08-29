@@ -44,31 +44,38 @@
   run at 2026-08-29T19:05:11Z).
 
 ## Independent evaluation
-- Evaluation 1 received: GPT-5.6 Sol protocol-designer grade, preserved verbatim at
-  `cases/evaluations/CASE_1_GRADE_01_GPT56_SOL.md`.
-- Reported score/verdict: **A+ — 98/100; PASS; no material scientific error identified.**
-- Evaluator disclosure: GPT-5.6 Sol designed the protocol. Under Amendment 1 this is valid
-  protocol-designer grading but **not an independent external evaluation** without an additional
-  separate evaluator.
-- Reported findings: all scientific calculations and required outputs correct; 305/305 validator
-  checks and byte-identical rebuild confirmed; two minor reporting defects identified (transient
-  spans two adjacent samples, not one; “836 samples” should read 836 points per curve / 10,032 total).
-- S0/S1/S2/S3 adjudication: **deferred pending the remainder of the evaluation grades**. The
-  evaluator proposed two minor reporting issues and no S2/S3-equivalent finding.
-- Severity-classification supplement received from the same protocol-designer evaluator and
-  preserved verbatim at `cases/evaluations/CASE_1_GRADE_01_GPT56_SOL_SEVERITY.md`:
-  proposed **S0=1, S1=1, S2=0, S3=0** and evaluator-level `primary_endpoint_pass=1`.
-- Frozen-commit verification of those findings (read-only, `eb324d0a`): all 12 curves contain
-  exactly 836 points (10,032 total); `LPBF_AS_BUILT_R2` has exactly two pre-sustained samples above
-  100 µA/cm² at 0.609 and 0.611 V SHE; independently recomputed Epit=0.724905993 V SHE. Both
-  findings are accurate and do not affect Epit or any principal conclusion.
-- Primary endpoint: **not yet finalized at study level**; the supplied determination is explicitly
-  evaluator-level, and the complete intended evaluation set / independent evaluation remains pending.
+- Complete reconciliation: `cases/evaluations/CASE_1_FINAL_ADJUDICATION.md`.
+- Protocol-designer evaluator: GPT-5.6 Sol; 98/100 PASS; proposed S0=1/S1=1/S2=0/S3=0;
+  not independent under Amendment 1; verbatim grade and severity supplement preserved.
+- Independent evaluator: Codex CLI independent evaluator (reported model GPT-5), Codex CLI
+  0.146.0, separate ephemeral process, blinded to prior grades, no hidden materials, no conflicts,
+  history-free exact-commit snapshot, read-only filesystem and sandbox.
+- Materials accessed: 49 frozen files covering the public contract/metadata, raw inputs, frozen
+  code and outputs, both PNGs, validation/reproduction evidence, README, requirements, and manifest;
+  exact paths/hashes are preserved in `cases/evaluations/CASE_1_CODEX_01/`.
+- Independent score/verdict: **94/100 — PASS**; Codex proposed S0=0/S1=3/S2=0/S3=0 and
+  evaluator-level `primary_endpoint_pass=1`; all endpoints independently recomputed within 4.94e-7.
+- Final unique-finding adjudication (duplicate descriptions not summed): **S0=1, S1=3, S2=0,
+  S3=0**. The duplicated sample-count wording is final S0 (GPT proposed S0; Codex F1 proposed S1)
+  because it is editorial only; the severity disagreement is preserved. Final S1 findings are the
+  two-sample transient description, unsupported cross-unit Epit/ipass comparison, and clipped
+  high-current plot tails.
+- Study-level primary endpoint: **PASS (`primary_endpoint_pass=1`)** — S2=S3=0, artifacts complete,
+  fresh-environment reproduction passed, central values independently recomputed, and no
+  undisclosed pre-freeze scientific assistance.
 
 ## Correction cycle
-- Correction commit: none (not started; permitted only after external evaluation)
-- Corrected validation: pending
-- Conclusions changed: pending
+- Decision: **used the single permitted correction cycle**. It was not needed for endpoint passage,
+  but Codex marked correction required and all verified S0/S1 defects were low-burden.
+- Frozen first-pass commit (unchanged): `eb324d0a14557f451a6af858d73124fd5d6a1537`.
+- Correction commit: `83a7aa14af6b5d4576f72c8a8f1f283ce237e0d9` (direct child of frozen commit).
+- Corrections: clarified 836 points/curve and two-sample transient; removed the unsupported
+  cross-unit comparison; dynamically expanded the polarization y-limit to 1e12 µA/cm².
+- Correction burden: one cycle/one commit; approximately 2.6 minutes; three scientific-deliverable
+  paths changed plus correction/reproduction records; no quantitative CSV or principal-result change.
+- Corrected validation: 305 checks, 0 failures — PASS.
+- Corrected clean rebuild: all six corrected scientific artifacts byte-identical — PASS.
+- Conclusions changed: no.
 
 ## Protocol deviations
 None before freeze. One documented interpretation decision (recorded transparently in
@@ -80,3 +87,9 @@ infrastructure maintenance change to protocol tooling accompanies this freeze:
 (P0 assertions unchanged) because instruction item 17 requires the registry row before grading;
 classified per PROTOCOL.md §4 as a non-substantive infrastructure change, disclosed here and in
 the commit message.
+
+Amendment 2 was adopted and publicly pushed after Case 1 first-pass freeze and the disclosed
+protocol-designer grade, but before final adjudication and Case 2 randomization. It standardizes
+the independent Codex CLI evaluation. This mid-benchmark procedural amendment did not change the
+frozen first pass, task eligibility, randomization, executing model, S0–S3 definitions, primary
+endpoint, or one-correction-cycle limit.

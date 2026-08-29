@@ -1,0 +1,247 @@
+[
+  {
+    "path": "MANIFEST.sha256",
+    "sha256": "ab5c1e0adb6df0c20ab9434c53020cb1c84e40e412d7657db513257407457422",
+    "size_bytes": 2915
+  },
+  {
+    "path": "README.md",
+    "sha256": "e00c2e2d6b42be098035693c3a498b290e9650e0217e4351ef5e540d3d3d976c",
+    "size_bytes": 2148
+  },
+  {
+    "path": "input/README_input.md",
+    "sha256": "8f5508dd486c114bbed6fa0a95b9cac422441e9bebd9e76b7fee18bd4950e5ee",
+    "size_bytes": 802
+  },
+  {
+    "path": "input/analysis_constants.json",
+    "sha256": "df376a06546f1056bb3cf1b06babd20fd703841510f3f2a0c8f74ee22212f28b",
+    "size_bytes": 909
+  },
+  {
+    "path": "input/curves/LPBF_AS_BUILT_R1.csv",
+    "sha256": "fef14f0746aa8599b91ac323f9fdb088127368cc7eae005af0eb742b13d50a46",
+    "size_bytes": 24502
+  },
+  {
+    "path": "input/curves/LPBF_AS_BUILT_R2.csv",
+    "sha256": "8b70ba779b427fce9612ba87789181230a23ce6dc7e4c8a3a86a165988516fb6",
+    "size_bytes": 24490
+  },
+  {
+    "path": "input/curves/LPBF_AS_BUILT_R3.csv",
+    "sha256": "504639f28380ea0f9370aa2f2b8c2b713f2572b500882d65df7e040a14ac48ac",
+    "size_bytes": 24540
+  },
+  {
+    "path": "input/curves/LPBF_EPOLISHED_R1.csv",
+    "sha256": "f7572b1676416cc8455897352a5de8a4c08d42141f4f9bb6127a9cb6c95efdf1",
+    "size_bytes": 24201
+  },
+  {
+    "path": "input/curves/LPBF_EPOLISHED_R2.csv",
+    "sha256": "54477da171ad3a75e2b621db5188b5f4b31fb479000aefb0b6662942eba198e1",
+    "size_bytes": 24168
+  },
+  {
+    "path": "input/curves/LPBF_EPOLISHED_R3.csv",
+    "sha256": "a3f14c3dfa9cb02493bf4b34ef062145a57bea13dade793a7ff16ca09f5d3be9",
+    "size_bytes": 24191
+  },
+  {
+    "path": "input/curves/LPBF_PASSIVATED_R1.csv",
+    "sha256": "1f196ae64ab000b1f306e09c47e6e7f46a20fe2095a59bbfc3d20c5913956419",
+    "size_bytes": 24055
+  },
+  {
+    "path": "input/curves/LPBF_PASSIVATED_R2.csv",
+    "sha256": "cd249bf5c1da644410f4113ee88c833ae9ca7f9eadda0e82476ea33645e9a600",
+    "size_bytes": 24054
+  },
+  {
+    "path": "input/curves/LPBF_PASSIVATED_R3.csv",
+    "sha256": "4c060275f4fe2cccf0030c625e93bcb58637a56d0411bb407776abf4f7015410",
+    "size_bytes": 24061
+  },
+  {
+    "path": "input/curves/WROUGHT_316L_R1.csv",
+    "sha256": "97ec0d5d4f25d639679e8e5afab5444d459c294b7a3c448a216eafd008ac43fe",
+    "size_bytes": 25005
+  },
+  {
+    "path": "input/curves/WROUGHT_316L_R2.csv",
+    "sha256": "a82c934d7eaf772b53b91c6ee6895f4fb2da4deb20ddf2f51cfaba22a9c9b802",
+    "size_bytes": 24958
+  },
+  {
+    "path": "input/curves/WROUGHT_316L_R3.csv",
+    "sha256": "81bda8d51f8b3af44888e69e74c1d54f993bccacd1866f80dd1e9c804ab016da",
+    "size_bytes": 24960
+  },
+  {
+    "path": "input/metadata.csv",
+    "sha256": "77c36a7ef968126e83135132cc95bca8654ad187d2b03107322a4e7d7d0e4752",
+    "size_bytes": 2060
+  },
+  {
+    "path": "output/analysis.py",
+    "sha256": "09dfb81591db6141c39ed11811d7abde3966cba2e417f79dc78ffc4f9cdb89f0",
+    "size_bytes": 27070
+  },
+  {
+    "path": "output/corrosion_metrics_summary.png",
+    "sha256": "163b9a00882db128d874917c0df2b4ba1b401b9bec71bdf526c6faccf5074bbb",
+    "size_bytes": 77745
+  },
+  {
+    "path": "output/corrosion_report.md",
+    "sha256": "04fdc7cc46ae89322599f0b5cec1fb2d85cc809ccd1050e25dcd0ea42ce00324",
+    "size_bytes": 10904
+  },
+  {
+    "path": "output/polarization_curves.png",
+    "sha256": "6e2ea79b6e9778108c2d379d75a3d5296b6c6cdd4fe21efe13429d798ae869c5",
+    "size_bytes": 225529
+  },
+  {
+    "path": "output/polarization_parameters_by_curve.csv",
+    "sha256": "e9834fa889627a36495d47fef314b313e9e86a1a3c2da677b95ad7b0a87d220a",
+    "size_bytes": 2061
+  },
+  {
+    "path": "output/sample_corrosion_summary.csv",
+    "sha256": "9277a5ef6406c3b1bdf56737fbe27f5ca412ff05a679e793da5b918389781c5d",
+    "size_bytes": 750
+  },
+  {
+    "path": "output/tafel_fit_windows.csv",
+    "sha256": "3ec0ed4ef75b80e33d7b1e426fad57eac2e3313b6cfc34d5296410b7fed63602",
+    "size_bytes": 1474
+  },
+  {
+    "path": "package/environment/Dockerfile",
+    "sha256": "898088cfe2242ac5495ece8d1ef16a574d734f60f15dcdab9ee5a2a4cf9758d4",
+    "size_bytes": 916
+  },
+  {
+    "path": "package/environment/data/README_input.md",
+    "sha256": "8f5508dd486c114bbed6fa0a95b9cac422441e9bebd9e76b7fee18bd4950e5ee",
+    "size_bytes": 802
+  },
+  {
+    "path": "package/environment/data/analysis_constants.json",
+    "sha256": "df376a06546f1056bb3cf1b06babd20fd703841510f3f2a0c8f74ee22212f28b",
+    "size_bytes": 909
+  },
+  {
+    "path": "package/environment/data/curves/LPBF_AS_BUILT_R1.csv",
+    "sha256": "fef14f0746aa8599b91ac323f9fdb088127368cc7eae005af0eb742b13d50a46",
+    "size_bytes": 24502
+  },
+  {
+    "path": "package/environment/data/curves/LPBF_AS_BUILT_R2.csv",
+    "sha256": "8b70ba779b427fce9612ba87789181230a23ce6dc7e4c8a3a86a165988516fb6",
+    "size_bytes": 24490
+  },
+  {
+    "path": "package/environment/data/curves/LPBF_AS_BUILT_R3.csv",
+    "sha256": "504639f28380ea0f9370aa2f2b8c2b713f2572b500882d65df7e040a14ac48ac",
+    "size_bytes": 24540
+  },
+  {
+    "path": "package/environment/data/curves/LPBF_EPOLISHED_R1.csv",
+    "sha256": "f7572b1676416cc8455897352a5de8a4c08d42141f4f9bb6127a9cb6c95efdf1",
+    "size_bytes": 24201
+  },
+  {
+    "path": "package/environment/data/curves/LPBF_EPOLISHED_R2.csv",
+    "sha256": "54477da171ad3a75e2b621db5188b5f4b31fb479000aefb0b6662942eba198e1",
+    "size_bytes": 24168
+  },
+  {
+    "path": "package/environment/data/curves/LPBF_EPOLISHED_R3.csv",
+    "sha256": "a3f14c3dfa9cb02493bf4b34ef062145a57bea13dade793a7ff16ca09f5d3be9",
+    "size_bytes": 24191
+  },
+  {
+    "path": "package/environment/data/curves/LPBF_PASSIVATED_R1.csv",
+    "sha256": "1f196ae64ab000b1f306e09c47e6e7f46a20fe2095a59bbfc3d20c5913956419",
+    "size_bytes": 24055
+  },
+  {
+    "path": "package/environment/data/curves/LPBF_PASSIVATED_R2.csv",
+    "sha256": "cd249bf5c1da644410f4113ee88c833ae9ca7f9eadda0e82476ea33645e9a600",
+    "size_bytes": 24054
+  },
+  {
+    "path": "package/environment/data/curves/LPBF_PASSIVATED_R3.csv",
+    "sha256": "4c060275f4fe2cccf0030c625e93bcb58637a56d0411bb407776abf4f7015410",
+    "size_bytes": 24061
+  },
+  {
+    "path": "package/environment/data/curves/WROUGHT_316L_R1.csv",
+    "sha256": "97ec0d5d4f25d639679e8e5afab5444d459c294b7a3c448a216eafd008ac43fe",
+    "size_bytes": 25005
+  },
+  {
+    "path": "package/environment/data/curves/WROUGHT_316L_R2.csv",
+    "sha256": "a82c934d7eaf772b53b91c6ee6895f4fb2da4deb20ddf2f51cfaba22a9c9b802",
+    "size_bytes": 24958
+  },
+  {
+    "path": "package/environment/data/curves/WROUGHT_316L_R3.csv",
+    "sha256": "81bda8d51f8b3af44888e69e74c1d54f993bccacd1866f80dd1e9c804ab016da",
+    "size_bytes": 24960
+  },
+  {
+    "path": "package/environment/data/metadata.csv",
+    "sha256": "77c36a7ef968126e83135132cc95bca8654ad187d2b03107322a4e7d7d0e4752",
+    "size_bytes": 2060
+  },
+  {
+    "path": "package/environment/env/Dockerfile",
+    "sha256": "52b4088365d35445c7900cb75099d9933dd39dbe23191a0b8c6e307eb1ac023a",
+    "size_bytes": 188
+  },
+  {
+    "path": "package/instruction.md",
+    "sha256": "6ad3d9823d626ccf8c1f488e1f046729f93c1e48c11337a1326b8253dfc20467",
+    "size_bytes": 3432
+  },
+  {
+    "path": "package/task.json",
+    "sha256": "c5741d42ee95f00afa37c52aa3df5d2cc6c712b75156cf05c866f1a6d0977048",
+    "size_bytes": 683
+  },
+  {
+    "path": "package/task.toml",
+    "sha256": "69e70e3184d15c0501878fbb268eb231d3f91809e5373369b3bf1bb8f04f0830",
+    "size_bytes": 1080
+  },
+  {
+    "path": "reproduction/REPRODUCTION_LOG.md",
+    "sha256": "b7cfd26f0a0baeddabe3b15b2ee47f00125f44251c0488756138b8633ff25c9f",
+    "size_bytes": 1393
+  },
+  {
+    "path": "reproduction/fresh_env_rebuild.sh",
+    "sha256": "ec9233d8ac33a15214fedd151c45deac9bc2610bdb04d900ed68fdba4682a057",
+    "size_bytes": 2178
+  },
+  {
+    "path": "requirements.txt",
+    "sha256": "2d3d514d6f0d09a498a200b90038661741a13d2756553e0f9b45445f9f5b9754",
+    "size_bytes": 61
+  },
+  {
+    "path": "validation/VALIDATION_RESULTS.json",
+    "sha256": "8f0be420ac84cd523e01921c177f8403c973bf6706cf9506a47927a4b5318f74",
+    "size_bytes": 234
+  },
+  {
+    "path": "validation/validate_outputs.py",
+    "sha256": "68b57147b57b6f998045234b289aeb6c6cfa566cc82af2b5c42e45a8ec8ef442",
+    "size_bytes": 14341
+  }
+]
