@@ -1,0 +1,6 @@
+{
+  "provider": "https://blockstream.info/api",
+  "url": "https://blockstream.info/api/block/00000000000000000001877d17b42cf16e4d06eaac84764597c516aa9599d15d",
+  "requested_at_utc": "2026-08-29T18:40:01.754390+00:00",
+  "body": "{\"id\":\"00000000000000000001877d17b42cf16e4d06eaac84764597c516aa9599d15d\",\"height\":964456,\"version\":596951040,\"timestamp\":1787932308,\"tx_count\":4269,\"size\":1639524,\"weight\":3992814,\"merkle_root\":\"67c90e05525d85551e5e94724fcc81fa811975985ab082d921ece528848c6b63\",\"previousblockhash\":\"0000000000000000000115f68ab7c8be931efb0991e003da47c79450e803522b\",\"mediantime\":1787929121,\"nonce\":800691523,\"bits\":386022593,\"difficulty\":125807076547197.55}"
+}

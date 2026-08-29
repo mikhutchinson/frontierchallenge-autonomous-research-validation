@@ -1,0 +1,20 @@
+{
+  "cue_timestamp_utc": "2026-08-29T18:19:56Z",
+  "cue_epoch": 1788027596,
+  "boundary_prev_block": {
+    "height": 964605,
+    "hash": "00000000000000000000dead6c74d8ce695ceb5f66bbb3e77fa9f5288e8a7203",
+    "time": 1788027515,
+    "time_iso": "2026-08-29T18:18:35+00:00"
+  },
+  "selected_first_block_after_cue": {
+    "height": 964606,
+    "hash": "00000000000000000000cf227ba8712abfadaf6d5f2e848ae2b4a7abba95f05f",
+    "time": 1788027649,
+    "time_iso": "2026-08-29T18:20:49+00:00"
+  },
+  "providers_agree": true,
+  "prev_block_time_iso": "2026-08-29T18:18:35+00:00",
+  "selected_block_time_iso": "2026-08-29T18:20:49+00:00",
+  "strictly_after_cue_verified": true
+}

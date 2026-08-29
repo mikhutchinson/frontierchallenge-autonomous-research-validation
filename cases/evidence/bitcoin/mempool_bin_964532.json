@@ -1,0 +1,6 @@
+{
+  "provider": "https://mempool.space/api",
+  "url": "https://mempool.space/api/block/0000000000000000000188fc6de805a94b8e44182160c741b05542b3bd5f3fcf",
+  "requested_at_utc": "2026-08-29T18:40:07.118470+00:00",
+  "body": "{\"id\":\"0000000000000000000188fc6de805a94b8e44182160c741b05542b3bd5f3fcf\",\"height\":964532,\"version\":680263680,\"timestamp\":1787980873,\"tx_count\":3479,\"size\":1519485,\"weight\":3993729,\"merkle_root\":\"2dd545e607a0afe240c640e09c41c279c94feebcd1267823e309145dde77b17e\",\"previousblockhash\":\"00000000000000000000d81858586addc65eb9f59aa1da9f6a356ca32dc2e4e9\",\"mediantime\":1787977660,\"nonce\":511490120,\"bits\":386022593,\"difficulty\":125807076547197.55}"
+}
