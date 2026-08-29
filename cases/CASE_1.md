@@ -55,7 +55,15 @@
   spans two adjacent samples, not one; “836 samples” should read 836 points per curve / 10,032 total).
 - S0/S1/S2/S3 adjudication: **deferred pending the remainder of the evaluation grades**. The
   evaluator proposed two minor reporting issues and no S2/S3-equivalent finding.
-- Primary endpoint: **not yet finalized**; awaiting the complete evaluation set.
+- Severity-classification supplement received from the same protocol-designer evaluator and
+  preserved verbatim at `cases/evaluations/CASE_1_GRADE_01_GPT56_SOL_SEVERITY.md`:
+  proposed **S0=1, S1=1, S2=0, S3=0** and evaluator-level `primary_endpoint_pass=1`.
+- Frozen-commit verification of those findings (read-only, `eb324d0a`): all 12 curves contain
+  exactly 836 points (10,032 total); `LPBF_AS_BUILT_R2` has exactly two pre-sustained samples above
+  100 µA/cm² at 0.609 and 0.611 V SHE; independently recomputed Epit=0.724905993 V SHE. Both
+  findings are accurate and do not affect Epit or any principal conclusion.
+- Primary endpoint: **not yet finalized at study level**; the supplied determination is explicitly
+  evaluator-level, and the complete intended evaluation set / independent evaluation remains pending.
 
 ## Correction cycle
 - Correction commit: none (not started; permitted only after external evaluation)
