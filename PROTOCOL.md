@@ -1,8 +1,8 @@
 # Prospective Evaluation Protocol
 
 **Protocol identifier:** ARAV-ECHEM-01  
-**Version:** 1.0  
-**Status:** Frozen before prospective Case 1  
+**Version:** 1.1
+**Status:** Frozen before prospective Case 1; Amendment 1 adopted
 **Scope:** Public FrontierChallenge electrochemistry analysis tasks  
 
 ## 1. Research question
@@ -34,6 +34,8 @@ For every prospective case, the agent will:
 13. Rebuild the corrected output in a fresh environment and compare scientific-artifact hashes.
 
 ## 4. Agent and harness freeze
+
+Under Amendment 1, GPT-5.6 Sol designed this protocol and is excluded from serving as the prospective executing research agent. A different LLM within the Sirius harness must execute the prospective cases. GPT-5.6 Sol may grade frozen submissions if its protocol-designer role is disclosed; such a grade is not labeled independent unless supplied by a separate qualified evaluator.
 
 At the start of Case 1, the case record will capture the exact model identifier, harness/runtime version, system policy version when available, operating system, Python/runtime versions, enabled tools, and repository commit. Those fields become the reference configuration.
 
@@ -141,7 +143,8 @@ Any resulting manuscript will distinguish the retrospective P0 pilot from prospe
 
 Prospective Case 1 may begin only when all of the following are true:
 
-- this protocol is committed to a public timestamped repository;
+- this protocol and Amendment 1 are committed to a public timestamped repository;
+- the prospective executing LLM is not GPT-5.6 Sol and its configuration is recorded;
 - the candidate set and deterministic randomization method are frozen;
 - the registry contains only P0 and no prospective result;
 - the validation script passes; and

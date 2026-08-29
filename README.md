@@ -8,10 +8,12 @@ Prospective, scorer-blind evaluation of a fixed autonomous research workflow acr
 - **Retrospective pilot:** P0, EIS equivalent-circuit analysis
 - **Prospective cases started:** 0
 - **Agent state:** standing by for the investigator's start cue
+- **Role separation:** GPT-5.6 Sol designed the protocol and is excluded from prospective execution; it may grade with disclosure
 
 ## Study documents
 
 - [Prospective protocol](PROTOCOL.md)
+- [Protocol amendments](AMENDMENTS.md)
 - [Eligible task set and randomization](RANDOMIZATION.md)
 - [Outcome and error-severity definitions](METRICS_SCHEMA.md)
 - [Case registry](CASE_REGISTRY.csv)
